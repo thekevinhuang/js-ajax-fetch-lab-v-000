@@ -55,5 +55,6 @@ function getIssues() {
 }
 
 function showIssues(json) {
-  
+  result = json.map((result)=>)
+  document.getElementById('issues').innerHTML += `<ul>${result}</ul>`
 }
