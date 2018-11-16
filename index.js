@@ -19,6 +19,7 @@ function forkRepo() {
 
 function showResults(json) {
   //use this function to display the results from forking via the API
+  console.log(json)
   let result = `<a href=${json.html_url}>Fork Link</a>`
   document.getElementById('results').innerHTML += result
 }
