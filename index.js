@@ -22,7 +22,6 @@ function forkRepo() {
 
 function showResults(json) {
   //use this function to display the results from forking via the API
-  console.log(json)
   let result = `<a href=${json.html_url}>Fork Link</a>`
   document.getElementById('results').innerHTML += result
 }
@@ -46,4 +45,11 @@ function createIssue() {
 
 function getIssues() {
   //once an issue is submitted, fetch all open issues to see the issues you are creating
+  fetch(`https://api.github.com/repos/thekevinhuang/js-ajax-fetch-lab/issues/`, {
+    headers: {
+      Authorization: `token ${getToken()}`
+    }
+  })
+    .then(res=>res.json())
+    .then(json=>)
 }
