@@ -30,6 +30,7 @@ function showResults(json) {
 
 function createIssue() {
   //use this function to create an issue based on the values input in index.html
+  let title = document.getElementById('title').value
 }
 
 function getIssues() {
