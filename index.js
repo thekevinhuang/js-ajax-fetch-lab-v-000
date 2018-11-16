@@ -55,6 +55,6 @@ function getIssues() {
 }
 
 function showIssues(json) {
-  result = json.map((result)=>)
+  result = json.map((item)=>`<li><h3>${item.title}</h3><p>${item.body}</p></li>`).join('')
   document.getElementById('issues').innerHTML += `<ul>${result}</ul>`
 }
