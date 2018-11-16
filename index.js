@@ -42,7 +42,6 @@ function createIssue() {
       }
     }
   )
-  
 }
 
 function getIssues() {
