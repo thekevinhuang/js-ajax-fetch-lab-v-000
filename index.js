@@ -51,5 +51,9 @@ function getIssues() {
     }
   })
     .then(res=>res.json())
-    .then(json=>)
+    .then(json=>showIssues(json))
+}
+
+function showIssues(json) {
+  
 }
